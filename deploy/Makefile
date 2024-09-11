@@ -30,7 +30,8 @@ ifeq ($(LOCALHOST_INVENTORY),0)
 	@echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
 	@echo "┃            Git repositories will be reset. Uncommitted changes will be lost.          ┃"
 	@echo "└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘"
-	$(eval ASK_BECOME_PASS := -K)
+#	$(eval ASK_BECOME_PASS := -K)
+	ASK_BECOME_PASS=""
 	@echo "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
 	@echo "┃ Ansible BECOME password: if you are using a passwordless SUDO, skip by pressing enter.┃"
 	@echo "└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘"
