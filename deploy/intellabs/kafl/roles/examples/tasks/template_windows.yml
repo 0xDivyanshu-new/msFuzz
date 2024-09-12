@@ -82,7 +82,7 @@
   ansible.builtin.apt:
     name:
       - pax-utils
-      - qemu
+      - qemu-system-x86
       - qemu-kvm
       - libvirt-clients
       - libvirt-daemon-system
